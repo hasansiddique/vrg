@@ -1,0 +1,55 @@
+[id="step-four"] {
+  h5 {
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-bottom: 15px;
+  }
+
+  .select-all {
+    padding-top: 35px !important;
+  }
+
+  .item {
+    padding: 20px 25px 0;
+
+    .checked {
+      color: $orange !important;
+    }
+  }
+
+  .item-promo {
+    padding: 10px;
+  }
+
+  .info-icon {
+    padding-left: 10px;
+    position: absolute;
+    margin-top: 2px;
+  }
+
+  .hom-cre-acc-right form {
+    padding: 10px 20px !important;
+
+    .input-field {
+      margin-top: 0 !important;
+    }
+  }
+
+  .chec-out-pay [type="radio"] + label:before, [type="radio"] + label:after {
+    top: 0 !important;
+  }
+
+  [type="radio"]:checked + label:after, [type="radio"].with-gap:checked + label:after {
+    background-color: $orange !important;
+  }
+
+  [type="radio"]:checked + label:after, [type="radio"].with-gap:checked + label:before, [type="radio"].with-gap:checked + label:after {
+    border: 2px solid $orange !important;
+  }
+
+  .chec-out-pay label {
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: 100 !important;
+  }
+}

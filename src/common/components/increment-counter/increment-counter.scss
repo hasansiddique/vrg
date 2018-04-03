@@ -1,0 +1,58 @@
+.counter {
+  @include clearfix;
+  min-width: 90px;
+  text-align: center;
+  .btn-counter {
+    display: block;
+    float: left;
+    border-radius: 15px;
+    height: 30px;
+    width: 30px;
+    border: thin solid $blue;
+    color: $blue;
+    font-size: 12px;
+    background-color: #ffffff;
+    i.fa{
+      position: relative;
+      top: 1px;
+      left: 1px;
+      color: $blue;
+    }
+    &:hover {
+      background-color: $blue;
+      color: #ffffff;
+      i.fa{
+        color: #ffffff;
+      }
+    }
+  }
+
+  .btn-counter.disabled {
+    background-color: transparent !important;
+    border: thin solid rgba(6, 116, 225, 0.35) !important;
+    color: rgba(6, 116, 225, 0.35) !important;
+    &:hover{
+      i.fa{
+        color: $blue;
+      }
+    }
+  }
+
+  .btn-counter-left {
+    // margin-right: 15px;
+  }
+
+  .btn-counter-right {
+    // float: right;
+    // margin-right: 10px;
+  }
+
+  .counter-text {
+    float: left;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    color: #777777;
+    text-align: center;
+  }
+}

@@ -1,0 +1,130 @@
+[id="responsive-carousal-slider"] {
+  .carousel .slide .legend {
+    bottom: 0 !important;
+    border-radius: 0 !important;
+    background: rgba(#444444, 0.6) !important;
+    opacity: 1 !important;
+    left: 45% !important;
+    width: 100% !important;
+    font-size: 14px !important;
+  }
+
+  .thumb {
+    width: 150px;
+  }
+}
+
+.my-carousel {
+
+  .slick-slider {
+
+    &:hover{
+      .slick-arrow{
+        opacity: 1;
+        &:before {
+          opacity: 1;
+        }
+      }
+    }
+
+    .slide {
+      position: relative;
+
+      img {
+        width: 100%;
+        display: block;
+        min-height: 100px;
+      }
+
+      p {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 6px;
+        margin: 0;
+        font-size: 0.85em;
+        background-color: rgba(#555555, 0.6);
+        color: #ffffff;
+      }
+    }
+
+    .slick-arrow {
+      background-color: rgba(#555555, 0.5);
+      z-index: 1;
+      width: 40px;
+      height: 100%;
+      opacity: 0.4;
+      // transition: opacity 0.1s ease;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:before {
+        position: relative;
+        top: 0px;
+      }
+
+      &.slick-next {
+        right: 0;
+      }
+
+      &.slick-prev {
+        left: 0;
+      }
+    }
+
+    .slick-dots {
+      bottom: 0;
+
+      li {
+
+        button {
+          &:before {
+            color: #ffffff;
+            opacity: 0.5;
+            font-size: 8px;
+          }
+        }
+
+        &.slick-active {
+
+          button {
+            &:before {
+              color: #ffffff;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .paging {
+    margin-top: 5px;
+
+    .slick-slider {
+
+      .slide {
+        padding: 5px;
+
+        .thumb-container {
+          cursor: pointer;
+          position: relative;
+
+          img {
+            margin: 0 auto;
+            width: 100%;
+            display: block;
+            outline: solid 2px lighten($blue, 50);
+
+            &.my-active {
+              outline: solid 2px darken($blue, 10);
+            }
+          }
+        }
+      }
+    }
+  }
+}

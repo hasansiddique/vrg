@@ -1,0 +1,27 @@
+[id="top-level-spiner"] {
+  .top-level-spinner {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    position: fixed;
+    background-color: #fff;
+  }
+
+  .top-level-spinner .spinner {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    background-image: url('/images/preloader.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+  }
+
+  .top-level-spinner .spinner .loading-text {
+    text-align: center;
+  }
+}

@@ -1,0 +1,124 @@
+[id="property-calendar"] {
+  .DateRangePickerInput {
+    display: none !important;
+  }
+
+  .DateRangePicker_picker__openDown {
+    display: block !important;
+    top: 0 !important;
+    position: relative !important;
+  }
+
+  .DayPicker__horizontal {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    margin: 0 auto;
+  }
+
+  .CalendarDay_container {
+    border: 1px solid #ffffff !important;
+    line-height: 0 !important;
+  }
+
+  .CalendarDay_container:hover {
+    background: none !important;
+  }
+
+  .CalendarDay_button {
+    cursor: default !important;
+    pointer-events: none;
+    height: 47px !important;
+  }
+
+  .CalendarDay__blocked_calendar, .CalendarDay__blocked_calendar:active, .CalendarDay__blocked_calendar:hover {
+    background: #e8e8e8 !important;
+  }
+
+  .DayPicker_weekHeader {
+    top: 66px !important;
+  }
+
+  .dir-pr-p3-right p, li {
+    font-size: 18px !important;
+    color: $blue !important;
+  }
+
+  .CalendarMonth_caption {
+    padding-bottom: 60px !important;
+  }
+
+  .CalendarDay_button:focus {
+    background-color: transparent !important;
+  }
+
+  .CalendarDay__selected, .CalendarDay__selected:active, .CalendarDay__selected:hover {
+    background: none !important;
+  }
+
+  .CalendarDay__hovered_span {
+    background: none !important;
+  }
+
+  button:focus {
+    background-color: transparent !important;
+  }
+
+  .property-rates-availability {
+    overflow-y: auto;
+
+    .check-out-blocked {
+      background: $white !important;
+      position: relative;
+      border-bottom: solid 22px #e8e8e8;
+      border-right: solid 20px #e8e8e8;
+      border-left: solid 18px transparent;
+      border-top: solid 25px transparent;
+
+      .calendar-date {
+        position: absolute;
+        top: -22px;
+        left: -6px;
+      }
+
+      .calendar-rate {
+        position: absolute;
+        left: -13px;
+        top: 1px;
+      }
+    }
+
+    .check-in-blocked {
+      background: #e8e8e8 !important;
+      position: relative;
+      border-bottom: solid 22px $white;
+      border-right: solid 20px $white;
+      border-left: solid 18px transparent;
+      border-top: solid 25px transparent;
+
+      .calendar-date {
+        position: absolute;
+        top: -22px;
+        right: -6px;
+      }
+
+      .calendar-rate {
+        position: absolute;
+        right: -8px;
+        top: 1px;
+      }
+    }
+
+    .calendar-date {
+      font-size: 16px;
+      color: $darkGrey;
+      font-weight: bold;
+    }
+
+    .calendar-rate {
+      font-size: 12px;
+      color: #70767a;
+      min-width: 25px;
+      min-height: 23px;
+    }
+  }
+}

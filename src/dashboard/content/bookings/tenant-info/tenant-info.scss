@@ -1,0 +1,76 @@
+.modal h2 {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  color: $orange;
+  border-top: none;
+}
+
+// .modal-header {
+//   padding: 0;
+//   border-bottom: none;
+// }
+
+// .modal button.close {
+//   right: 25px;
+//   top: 15px;
+//   font-size: 26px;
+// }
+
+[id="tenant-info"] {
+  .db-list-com {
+    padding: 30px 40px;
+  }
+
+  .modal-header {
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .invoice-1 {
+    padding: 15px 50px 30px;
+  }
+
+  .invoice-1-logo span {
+    line-height: 70px;
+  }
+
+  .ds-boar-title h2 {
+    color: $orange;
+    padding-top: 0 !important;
+    border-top: none !important;
+  }
+
+  .error {
+    color: $error;
+    font-weight: bold;
+  }
+
+  .success {
+    color: $green;
+    font-weight: bold;
+  }
+
+  .db-mak-pay-bot {
+    text-align: right;
+  }
+
+  [id="tenant-status"] {
+    input {
+      height: 45px;
+      position: relative;
+      padding: 5px 24px;
+      box-sizing: border-box;
+      box-shadow: none;
+      border: 1px solid #e8e8e8;
+      text-indent: 0;
+      line-height: 12px;
+      -webkit-transition: border-color .4s, color .4s;
+      transition: border-color .4s, color .4s;
+      width: 100%;
+      font-size: 14px;
+      background: #fff;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+[id="property-inquiry"] {
+  .pglist-p-com {
+    margin-top: 15px;
+
+    .error {
+      padding: 5px;
+      text-align: left;
+      color: #F44336;
+    }
+
+    .list-pg-upro {
+      padding-top: 0 !important;
+
+      .questions {
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 20px;
+      }
+
+      .phone {
+        padding-top: 10px;
+        font-size: 20px;
+        color: $blue;
+      }
+    }
+
+    .list-pg-inn-sp {
+      padding: 0 20px 20px !important;
+    }
+
+    .hom-cre-acc-right {
+      margin-bottom: 25px;
+
+      form {
+        padding: 15px !important;
+      }
+    }
+
+    .pg-list-user-pro {
+      background: none;
+      text-align: center;
+      height: auto !important;
+
+      img {
+        margin-top: 15px !important;
+        margin-left: 0 !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+[id="listing"] {
+  .com-padd {
+    padding: 75px 0 !important;
+  }
+
+  h2 {
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+
+    span {
+      font-size: inherit !important;
+    }
+  }
+
+  h3 {
+    margin: 0 !important;
+  }
+
+  .v3-list-ql {
+    top: 0 !important;
+  }
+
+  .dir-alp-tit ol li a {
+    color: $grey !important;
+  }
+
+  .breadcrumb > .active {
+    color: $blue !important;
+  }
+
+  .dir-alp-tit {
+    background-color: #eaedef !important;
+    border-radius: 5px !important;
+  }
+
+  .carousel {
+    height: 125px !important;
+
+    .slider {
+      height: auto !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+    }
+
+    .control-prev.control-arrow:before {
+      border-right: 12px solid $blue !important;
+    }
+
+    .control-next.control-arrow:before {
+      border-left: 12px solid $blue !important;
+    }
+
+    .thumbs-wrapper {
+      margin: 10px !important;
+    }
+
+    .thumb.selected, .thumb:hover {
+      border: 3px solid $blue !important;
+    }
+
+    .carousel-status {
+      right: 10px !important;
+      color: #ddd !important;
+    }
+  }
+
+  .carousel.carousel-slider {
+    height: auto !important;
+  }
+
+  .breadcrumb {
+    padding: 8px 15px 8px 50px !important;
+  }
+
+  .svg-icon {
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 15px;
+  }
+  .property-breadcrumb {
+    margin-bottom: 10px;
+    .breadcrumbs {
+      border-radius: 5px;
+      ul {
+        border-radius: 5px;
+        padding: 5px 10px 8px;
+        li {
+          .svg-icon {
+            margin-left: 5px;
+            margin-top: 7px;
+          }
+          a {
+            margin-top: 6px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@import "booking-nav/booking-nav";
+@import "availability-info/availability-calendar/availability-calendar";
+@import "layout-summary/layout-summary";
+@import "property-calendar/property-calendar";
+@import "property-details/property-details";
+@import "property-features/property-features";
+@import "recently-visited/recently-visited";
+@import "property-reviews/property-reviews";
+@import "property-inquiry/property-inquiry";
+@import "beds-and-baths/beds-and-baths";

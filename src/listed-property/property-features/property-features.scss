@@ -1,0 +1,21 @@
+[id="property-features"] {
+  .item {
+    padding-bottom: 10px;
+
+    .check {
+      padding-right: 5px;
+    }
+
+    .fa-check:before {
+      color: $green;
+    }
+  }
+
+  .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    border-top: none !important;
+  }
+
+  .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #ececec !important;
+  }
+}

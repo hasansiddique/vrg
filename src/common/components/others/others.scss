@@ -1,0 +1,15 @@
+.resturants{
+  .resturant{
+    .title{
+      padding: 10px 15px;
+      background-color: $headerBlue;
+      h4{
+        margin: 0;
+        height: 40px;
+        overflow: hidden;
+        line-height: 1.3em;
+        color: #ffffff;
+      }
+    }
+  }
+}

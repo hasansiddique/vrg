@@ -1,0 +1,460 @@
+[id="unit-rates"] .pglist-bg {
+  border: none;
+  font-family: 'Quicksand', sans-serif;;
+
+  input[type="number"] {
+    background-image: url("/images/dollar.png");
+    background-size: 14px;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    text-indent: 18px;
+  }
+
+  .error {
+    color: $error;
+    font-size: 12px;
+  }
+
+  .error-availability {
+    font-size: 18px !important;
+    margin-top: 15px;
+
+    a {
+      font-size: 18px;
+    }
+  }
+
+  .DayPicker__horizontal {
+    margin: 1px;
+  }
+
+  .property-rates-availability {
+    overflow-y: auto;
+
+    .bottom-menu {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: 102;
+      background-color: $white;
+      padding: 15px;
+      border-top: thin solid $border-color;
+    }
+
+    .blocked {
+      height: 100%;
+      background: #696969;
+      color: $white;
+    }
+
+    .booked {
+      height: 100%;
+      color: #999999;
+      background: #dddddd;
+    }
+
+    @media (min-width: 1150px) and (max-width: 1919px) {
+      .change-over-text {
+        font-size: 330%;
+      }
+
+      .CalendarDay_container {
+        .calendar-date {
+          // top: 0;
+          // left: 5px;
+        }
+
+        .calendar-rate {
+          // bottom: 5px;
+          // right: 5px;
+        }
+      }
+
+      .co-no-action, .co-check-in, .co-both, .co-check-out {
+        // height: 69px;
+      }
+
+      .selected-date {
+        .col-sm-1, .col-sm-2 {
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
+    }
+
+    @media (min-width: 1920px) and (max-width: 2880px) {
+      .change-over-text {
+        font-size: 550%;
+      }
+
+      .CalendarDay_container {
+        .calendar-date {
+          // top: 5px;
+          // left: 10px;
+          // font-size: 24px !important;
+        }
+
+        .calendar-rate {
+          // bottom: 5px;
+          // right: 5px;
+          // font-size: 15px !important;
+        }
+      }
+
+      .co-no-action, .co-check-in, .co-both, .co-check-out {
+        // height: 126px;
+      }
+    }
+
+    .legend {
+      list-style: none;
+      padding: 10px 0;
+    }
+
+    .legend li {
+      float: left;
+      margin-right: 20px;
+    }
+
+    .legend {
+      .text {
+        white-space: nowrap;
+        margin-left: 30px;
+        margin-top: 5px;
+        margin-right: 10px;
+      }
+      span {
+        border: thin solid #e1e1e1;
+        float: left;
+        width: 24px;
+        height: 26px;
+        text-align: center;
+      }
+    }
+
+    .change-over-text {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+    }
+
+    .co-no-action {
+      color: red;
+
+      .change-over-text {
+        border-bottom: 3px solid red;
+      }
+    }
+
+    .co-check-in {
+      color: orange;
+      .change-over-text {
+        border-bottom: 3px solid orange;
+      }
+    }
+
+    .co-both {
+      color: $green;
+
+      .change-over-text {
+        border-bottom: 3px solid $green;
+      }
+    }
+
+    .co-check-out {
+      color: $blue;
+
+      .change-over-text {
+        border-bottom: 3px solid $blue;
+      }
+    }
+
+    .legend {
+      .check-in-legend {
+        background: $white;
+        color: orange;
+        border-bottom: 2px solid orange;
+      }
+
+      .check-out-legend {
+        background: $white;
+        color: $blue;
+        border-bottom: 2px solid $blue;
+      }
+
+      .no-action-legend {
+        background: $white;
+        color: red;
+        border-bottom: 2px solid red;
+      }
+
+      .available-legend {
+        background-color: $white;
+        color: $green;
+        border-bottom: 2px solid $green;
+      }
+
+      .selected-legend {
+        background-color: $blue;
+      }
+
+      .booked-legend {
+        background-color: #dddddd;
+      }
+
+      .blocked-legend {
+        background-color: #696969;
+      }
+
+      .not-available-legend {
+        background-color: #696969;
+      }
+    }
+
+    .alert-info {
+      background-image: none;
+    }
+
+    .alert-success {
+      background-image: none;
+    }
+
+    .alert-danger {
+      background-image: none;
+    }
+
+    .alert {
+      text-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+    }
+
+    .CalendarDay_button {
+      float: left;
+    }
+
+    .CalendarDay__highlighted_calendar {
+      background: #F1F1F1;
+      color: #565a5c;
+    }
+
+    .CalendarDay__selected_span {
+      background: rgba(6, 116, 225, 0.65);
+      border: 1px solid rgba(6, 116, 225, 0.75);
+      color: #FFFFFF;
+    }
+
+    .CalendarDay__blocked_calendar, .CalendarDay__blocked_calendar:active, .CalendarDay__blocked_calendar:hover {
+      background: #dddddd;
+      border: 1px solid #ebeceb;
+      color: #cccccc;
+    }
+
+    .CalendarDay__hovered_span,
+    .CalendarDay__hovered_span:hover {
+      background: $lightBlue;
+      border: 1px solid $mediumBlue;
+      color: $white;
+    }
+
+    .CalendarDay__hovered_span:active {
+      background: $lightBlue;
+      border: 1px solid $lightBlue;
+      color: $white;
+    }
+
+    .CalendarDay_container {
+      border: 1px solid #ccc;
+
+      .full-blocked {
+        background: #e8e8e8;
+        position: absolute;
+        top: 2px;
+        left: 0;
+        right: 0;
+        bottom: -2px;
+      }
+
+      .calendar-date {
+        font-size: 1em;
+        position: absolute;
+        left: 4px;
+        top: 4px;
+        @include breakpoint(xs) {
+          font-size: 0.7em;
+        }
+        @include breakpoint(sm) {
+          font-size: 0.9em;
+        }
+        @include breakpoint(md) {
+          font-size: 1.4em;
+        }
+      }
+
+      .calendar-rate {
+        position: absolute;
+        right: 4px;
+        bottom: 4px;
+        font-size: 1em;
+        @include breakpoint(xs) {
+          font-size: 0.6em;
+        }
+        @include breakpoint(sm) {
+          font-size: 0.8em;
+        }
+        @include breakpoint(md) {
+          font-size: 0.9em;
+        }
+      }
+    }
+
+    .CalendarDay__highlighted_calendar:active, .CalendarDay__highlighted_calendar:hover, .CalendarDay_container:hover {
+      background: $blue;
+      color: #f5f5f5;
+    }
+
+    .CalendarDay__selected, .CalendarDay__selected:active, .CalendarDay__selected:hover {
+      background: $blue;
+      border: 1px solid $darkBlue;
+      color: #FFFFFF;
+    }
+
+    .CalendarDay__highlighted_calendar:hover, .CalendarDay_container:hover, .CalendarDay__selected, .CalendarDay__selected:active, .CalendarDay__selected:hover, .CalendarDay__selected_span, .CalendarDay__hovered_span, .CalendarDay__hovered_span:hover {
+      .blocked {
+        height: 0;
+        color: inherit;
+      }
+
+      .calendar-rate, .calendar-date, .co-no-action, .co-check-in, .co-check-out, .co-both {
+        color: inherit;
+      }
+    }
+  }
+
+  .select-availability {
+    .Select-value-label, .Select-placeholder {
+      font-size: 15px !important;
+      font-weight: normal;
+    }
+  }
+
+  .availability-container {
+    .main-heading {
+      background-color: lighten($headerBlue, 10);
+      color: #ffffff;
+      padding: 15px;
+      margin-top: 0px;
+    }
+  }
+
+  h3 {
+    margin-top: 10px;
+    border-bottom: thin solid $border-color;
+    padding-bottom: 15px;
+    font-size: 18px;
+  }
+
+  [type="radio"]:checked + label:after, [type="radio"].with-gap:checked + label:after {
+    background-color: $orange;
+  }
+
+  [type="radio"]:checked + label:after, [type="radio"].with-gap:checked + label:before, [type="radio"].with-gap:checked + label:after {
+    border: 2px solid $orange;
+  }
+
+  [type="radio"]:not(:checked) + label, [type="radio"]:checked + label {
+    line-height: 48px;
+    font-size: 1.5rem;
+  }
+
+  .availability-section {
+    padding-bottom: 20px;
+
+    .day-check {
+      margin-left: 10px;
+    }
+
+    .day-check-td {
+      padding-top: 15px;
+    }
+
+    .chec-out-pay {
+      padding: 0 10px 10px 10px;
+      border: solid 1px $border-color;
+      margin-bottom: 10px;
+      margin-top: 15px;
+    }
+
+    .heading {
+      margin-top: 25px;
+      margin-bottom: 10px;
+      background-color: lighten($headerBlue, 25);
+      border: solid 1px lighten($headerBlue, 20);
+      padding: 8px;
+      span {
+        font-size: 16px;
+        font-weight: 600;
+        color: #ffffff;
+      }
+    }
+
+    input[type="number"] {
+      border: thin solid #ccc;
+      line-height: 15px;
+      font-size: 14px;
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    input[type="number"]:disabled {
+      border-bottom: thin solid #ccc !important;
+    }
+
+    .DateInput__disabled {
+      width: 47%;
+    }
+
+    input:not([type]):disabled, input:not([type])[readonly="readonly"], input[type=text]:disabled, input[type=text][readonly="readonly"], input[type=password]:disabled, input[type=password][readonly="readonly"], input[type=email]:disabled, input[type=email][readonly="readonly"], input[type=url]:disabled, input[type=url][readonly="readonly"], input[type=time]:disabled, input[type=time][readonly="readonly"], input[type=date]:disabled, input[type=date][readonly="readonly"], input[type=datetime]:disabled, input[type=datetime][readonly="readonly"], input[type=datetime-local]:disabled, input[type=datetime-local][readonly="readonly"], input[type=tel]:disabled, input[type=tel][readonly="readonly"], input[type=number]:disabled, input[type=number][readonly="readonly"], input[type=search]:disabled, input[type=search][readonly="readonly"], textarea.materialize-textarea:disabled, textarea.materialize-textarea[readonly="readonly"] {
+      border-bottom: none;
+    }
+
+    .selected-date {
+      padding: 8px 0;
+      border: thin solid #ccc;
+      border-radius: 4px;
+      background: #f5f5f5;
+    }
+
+    .un-selectable {
+      background-color: #f2f2f2;
+      cursor: not-allowed;
+    }
+  }
+
+  .list-pg-inn-sp {
+    padding: 0;
+
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+
+      .col-md-8 {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+  .submit-button {
+    padding-top: 15px;
+    text-align: right;
+    border-top: thin solid #e1e1e1;
+    margin-top: 10px;
+  }
+}

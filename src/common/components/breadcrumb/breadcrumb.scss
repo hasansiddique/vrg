@@ -1,0 +1,56 @@
+.breadcrumbs{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: #eeeeee;
+  ul{
+    list-style: none;
+    padding: 15px;
+    @include breakpoint(xs){
+      padding: 10px 10px 5px 10px;
+    }
+    margin: 0;
+    li{
+      display: inline-block;
+      @include clearfix;
+      a{
+        float: left;
+        display: block;
+        margin-left: 10px;
+        text-transform: capitalize;
+        color: #747474;
+        @include breakpoint(xs){
+          font-size: 0.85em;
+        }
+        &.active{
+          color: $blue;
+          ::before{
+            padding: 0 0px;
+            color: transparent;
+            content: "";
+          }
+        }
+      }
+      span{
+        display: block;
+        float: left;
+        margin-left: 10px;
+      }
+      ::before{
+        padding: 0 5px;
+        color: #ccc;
+        content: "/\A0";
+      }
+      &:first-child{
+        ::before{
+          padding: 0;
+          content: none;
+        }
+        .svg-icon{
+          height: 24px;
+          position: relative;
+          bottom: 1px;
+        }
+      }
+    }
+  }
+}

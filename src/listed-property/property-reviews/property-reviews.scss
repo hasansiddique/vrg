@@ -1,0 +1,106 @@
+[id="property-reviews"] {
+
+  h6 {
+    font-size: 20px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .pagination li.active {
+    background-color: transparent !important;
+
+    a {
+      color: $white !important;
+    }
+  }
+
+  .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    background-color: $blue !important;
+  }
+
+  .pagination > li > a, .pagination > li > span {
+    cursor: pointer;
+    color: $blue !important;
+  }
+
+  .cus-rev {
+    padding: 10px 20px !important;
+  }
+
+  .pg-re-rat {
+    padding: 10px 0 0 0 !important;
+  }
+
+  .pill-item {
+    padding: 0 !important;
+    padding-right: 15px !important;
+    border-bottom: none !important;
+  }
+
+  .review-title {
+    color: $blue;
+    font-weight: bold;
+  }
+
+  .lp-ur-all-right, .lp-ur-all-left {
+    width: 50% !important;
+  }
+
+  .share-btn {
+    padding-bottom: 0 !important;
+
+    ul li {
+      &:nth-child(n) a {
+        background: #eaedef !important;
+        color: $darkGrey !important;
+      }
+    }
+  }
+
+  .label-default {
+    background-color: #eaedef !important;
+    color: $darkGrey !important;
+  }
+
+  .progress {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;;
+    border-radius: 0 !important;;
+    height: 6px !important;
+    margin: 0 !important;
+  }
+
+  .excellent {
+    .progress-bar {
+      background-color: #43a047 !important;
+      background-image: none !important;
+    }
+  }
+
+  .good {
+    .progress-bar {
+      background-color: #73ca14 !important;
+      background-image: none !important;
+    }
+  }
+
+  .average {
+    .progress-bar {
+      background-color: #3dbbd0 !important;
+      background-image: none !important;
+    }
+  }
+
+  .below-average {
+    .progress-bar {
+      background-color: #ca7224 !important;
+      background-image: none !important;
+    }
+  }
+
+  .bad {
+    .progress-bar {
+      background-color: #de382c !important;
+      background-image: none !important;
+    }
+  }
+}

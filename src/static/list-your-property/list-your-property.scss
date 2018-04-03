@@ -1,0 +1,32 @@
+.list-property-btn{
+  font-size: 2em;
+  background-color: $orange;
+  display: inline-block;
+  padding: 10px 40px;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: bold;
+  small{
+    display: block;
+    font-size: 0.5em;
+    font-weight: normal;
+  }
+  &:hover, &:active, &:focus{
+    color: #ffffff;
+    background-color: darken($orange, 5);
+  }
+}
+.vp-section{
+  color: #ffffff;
+  background-color: lighten($green, 5);
+  .top{
+    font-family:Times, 'Times New Roman';
+    color: #ffffff;
+    font-size: 1.6em;
+  }
+  .author{
+    font-family: 'Times New Roman', Times;
+    text-align: right;
+    font-size: 1.1em;
+  }
+}

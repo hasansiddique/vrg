@@ -1,0 +1,42 @@
+// === theme modules import === //
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import '../theme-assets/theme.scss';
+@import './../../node_modules/react-select/dist/react-select.css';
+@import './../../node_modules/react-responsive-carousel/lib/styles/main.css';
+@import './../../node_modules/react-responsive-carousel/lib/styles/carousel.css';
+@import './../../node_modules/react-stepzilla/src/css/main.css';
+@import './../../node_modules/react-dates/lib/css/_datepicker.css';
+
+@import './../../node_modules/react-select/dist/react-select.css';
+@import './../../node_modules/react-virtualized/styles.css';
+@import './../../node_modules/react-virtualized-select/styles.css';
+
+// === Custom styles import === //
+@import "layout/mixins";
+@import "layout/colors";
+@import "common";
+@import "components/top-spinner/top-spinner";
+@import "components/increment-counter/increment-counter";
+@import "components/restaurants/resturant";
+@import "components/shopping/shopping";
+@import "components/things-todo/todo";
+@import "components/carousal/carousal";
+@import "components/breadcrumb/breadcrumb";
+@import "layout/bootstrap-right-offset";
+@import 'layout/calendar-theme';
+@import "layout/page-wrapper/page-wrapper";
+@import "layout/header/header";
+@import "layout/footer/footer";
+@import "authentication/authentication";
+@import "../home/home";
+@import "../booking/booking";
+@import "../deals/deals";
+@import "../listed-property/listed-property";
+@import "../static/about/about";
+@import "../static/be-a-guester/be-a-guester";
+@import "../static/list-your-property/list-your-property";
+@import "../search/search";
+@import "../destination/destination";
+@import "../advertisement/advertisement";
+@import "../dashboard/dashboard";

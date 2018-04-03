@@ -1,0 +1,40 @@
+[id="search-destination"] {
+  .city-select {
+    text-align: left !important;
+  }
+
+  .abcdef {
+    padding: 15px;
+  }
+
+  .Select-control {
+    height: 52px !important;
+    border-radius: 0 !important;
+    border: none !important;
+    padding-left: 28px !important;
+    background: url("/images/search.png") no-repeat center $white !important;
+    background-position-x: 5.5pt !important;
+    background-size: 15.75pt !important;
+  }
+
+  .Select-placeholder, .Select--single > .Select-control .Select-value {
+    line-height: 52px !important;
+    padding-left: 38px !important;
+    font-size: 15px !important;
+  }
+
+  .Select-input > input {
+    line-height: 40px !important;
+    padding: 8px 0 32px !important;
+    font-size: 15px !important;
+  }
+}
+
+#select-guests {
+  height: 52px;
+}
+
+.tourz-sear-btn {
+  height: 52px;
+  line-height: 52px;
+}

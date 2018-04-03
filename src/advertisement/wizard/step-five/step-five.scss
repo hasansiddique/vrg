@@ -1,0 +1,83 @@
+[id="step-five"] {
+  .hom-cre-acc-right {
+    padding: 30px;
+    border: 1px solid #ededed;
+    box-sizing: border-box;
+    background: #eaedef;
+  }
+
+  .Select-option {
+    box-sizing: border-box;
+    background-color: #fff;
+    color: $blue;
+    cursor: pointer;
+    display: block;
+    padding: 15px;
+  }
+
+  .Select-option:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .Select-option.is-selected {
+    background-color: transparent;
+    color: $blue;
+  }
+
+  .Select-option.is-focused {
+    background-color: $blue;
+    color: $white;
+  }
+
+  .Select-option.is-disabled {
+    color: #cccccc;
+    cursor: default;
+  }
+
+  .Select-control {
+    height: 50px !important;
+  }
+
+  .Select, .Select div, .Select input, .Select span {
+    font-size: 18px !important;
+  }
+
+  .Select-placeholder, .Select--single > .Select-control .Select-value {
+    line-height: 50px;
+  }
+
+  .Select-input > input {
+    line-height: 30px;
+  }
+
+  .item {
+    padding: 20px 25px 0;
+
+    .checked {
+      color: $orange !important;
+    }
+  }
+
+  .chec-out-pay {
+    margin-top: 25px;
+  }
+
+  .chec-out-pay [type="radio"] + label:before, [type="radio"] + label:after {
+    top: 0 !important;
+  }
+
+  [type="radio"]:checked + label:after, [type="radio"].with-gap:checked + label:after {
+    background-color: $orange !important;
+  }
+
+  [type="radio"]:checked + label:after, [type="radio"].with-gap:checked + label:before, [type="radio"].with-gap:checked + label:after {
+    border: 2px solid $orange !important;
+  }
+
+  .chec-out-pay label {
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: 100 !important;
+  }
+}

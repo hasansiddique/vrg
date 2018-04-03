@@ -1,0 +1,117 @@
+[id="ad-wizard"] {
+  padding: 15px;
+  font-family: Poppins, sans-serif;
+
+  .hom-cre-acc-right form input {
+    font-size: 15px !important;
+    border: 1px solid #ccc !important;
+  }
+
+  .modal-header {
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .Select-placeholder, .Select--single > .Select-control .Select-value {
+    bottom: 0;
+    color: #d1d1da !important;
+  }
+
+  .step {
+    padding: 25px 15px;
+
+    h2 {
+      padding: 0 !important;
+      margin-bottom: 15px;
+      text-align: center;
+      border-top: none !important;
+
+      span {
+        font-size: 32px !important;
+        color: $orange;
+      }
+    }
+
+    .invalid {
+      border-bottom: 1px solid #F44336;
+      box-shadow: 0 1px 0 0 #F44336;
+    }
+
+    .error {
+      padding: 5px;
+      text-align: left;
+      color: #F44336;
+    }
+  }
+
+  .progtrckr {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .footer-buttons {
+    margin: 25px 0;
+    float: right;
+
+    .btn-primary {
+      filter: none !important;
+      background-image: none !important;
+      border-color: #0074e1 !important;
+      height: 50px !important;
+      background-color: #0074e1 !important;
+    }
+
+    .btn-success {
+      filter: none !important;
+      background-image: none !important;
+      border-color: #4caf50 !important;
+      height: 50px !important;
+      background-color: #4caf50 !important;
+    }
+
+    .btn-previous {
+      margin-right: 25px;
+    }
+  }
+
+  .multi-step {
+    margin-bottom: 60px;
+  }
+
+  ol.progtrckr li.progtrckr-doing:before {
+    background-color: $blue !important;
+  }
+
+  ol.progtrckr li.progtrckr-doing {
+    span {
+      color: $blue !important;
+      font-weight: bold;
+    }
+  }
+
+  .Select-control {
+    height: 45px !important;
+    border-radius: 0 !important;
+  }
+
+  .Select-control .Select-input > input {
+    height: 45px !important;
+    padding: 0 !important;
+    transition: none;
+    background: transparent;
+    border: none !important;
+    padding-left: 15px !important;
+  }
+
+  .Select-placeholder, .Select--single > .Select-control .Select-value {
+    line-height: 45px !important;
+    padding-left: 25px !important;
+  }
+}
+
+@import "./step-one/step-one";
+@import "./step-three/step-three";
+@import "./step-four/step-four";
+@import "./step-five/step-five";
+@import "./step-six/step-six";
+@import "wizard-payment/wizard-payment";

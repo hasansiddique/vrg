@@ -1,0 +1,223 @@
+[id="top-search-destination"] {
+  .city-select {
+    text-align: left !important;
+  }
+
+  .Select-control {
+    height: 38px !important;
+    border-radius: 0 !important;
+    border: none !important;
+    padding-left: 5px !important;
+  }
+
+  .Select-placeholder, .Select--single > .Select-control .Select-value {
+    line-height: 38px !important;
+    padding-left: 15px !important;
+    font-size: 14px !important;
+  }
+
+  .Select-input > input {
+    line-height: 20px !important;
+    padding: 8px 0 10px !important;
+    font-size: 14px !important;
+  }
+}
+
+[id="top-header"] {
+  .ts-menu-1 a img {
+    padding: 4px 0 !important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .ts-menu-3 {
+    width: 40% !important;
+    @include breakpoint(xs) {
+      width: 66% !important;
+    }
+
+    .tourz-top-search-form {
+      margin: 11px 0 0 60px;
+      section:nth-child(1) {
+        width: 80%;
+      }
+      @include breakpoint(xs) {
+        margin: 11px 0 0 0;
+        section:nth-child(1) {
+          width: 100% !important;
+        }
+      }
+      @include breakpoint(sm) {
+        margin: 11px 0 0 0;
+        section:nth-child(1) {
+          width: 80% !important;
+        }
+      }
+      .Select-arrow{
+        visibility: hidden;
+      }
+    }
+
+  }
+
+  .ts-menu-4 {
+    float: right !important;
+    width: 50% !important;
+    .list-property{
+      background-color: $orange;
+      &:hover, &:active, &:focus{
+        background-color: lighten($orange, 5);
+      }
+    }
+  }
+
+  [id="logged-in-user"] {
+    
+  } 
+}
+
+.logged-user{
+  top: -5px;
+  margin-left: 5px;
+  position: relative;
+  .dropdown{
+    button.btn{
+      background-color: #263A78;
+      background-image: none;
+      color: #ffffff;
+      text-shadow: none;
+      padding: 8px 10px 7px;
+      border: none;
+      border-radius: 4px;
+      box-shadow: none;
+      &:hover, &:focus, &:active{
+        background-color: lighten(#263A78, 10);
+        color: #ffffff;
+      }
+      i.fa{
+        display: inline-block;
+        background-color: red;
+        margin-left: 2px;
+        width: 16px;
+        height: 14px;
+        text-align: center;
+        border-radius: 2px;
+        color: darken(#263A78, 10);
+        background-color: #ffffff;
+        top: 0px;
+        position: relative;
+        &:before{
+          position: relative;
+          top: 1px;
+          left: 0px;
+        }
+      }
+    }
+    &.open{
+      button{
+        background-color: $blue;
+      }
+      ul.dropdown-menu{
+        width: 600px;
+        margin: 0;
+        li{
+          float: none;
+          display: block;
+          div.user-menu{
+            margin: 10px;
+            a{
+              border: solid 1px #eeeeee;
+              background-color: #ffffff;
+              border-radius: 4px;
+              padding: 8px 0px;
+              display: block;
+              margin-bottom: 5px;
+              text-align: center;
+              cursor: pointer;
+              img{
+                display: inline-block;
+                margin-top: 5px;
+              }
+              span{
+                margin-top: 5px;
+                display: block;
+                text-align: center;
+                font-size: 0.9em;
+              }
+              &.active, &:hover, &:active, &:focus{
+                background-color: #eeeeee;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.bottomMenu {
+  z-index: 102;
+}
+
+.is-property-page {
+  position: absolute !important;
+}
+
+.ts-menu-5 {
+  float: right;
+  // margin-right: 8px;
+  span {
+    i {
+      position: relative;
+
+    }
+  }
+}
+
+.menu-overlay {
+  position: fixed;
+  z-index: 100;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(#555555, 0.5);
+}
+
+.mob-right-nav {
+  right: -300px;
+  z-index: 101;
+  &.open {
+    right: 0px;
+  }
+  .menu-content {
+    position: relative;
+    z-index: 102;
+    .mob-right-nav-close {
+      width: 36px;
+      height: 36px;
+      border: 1px solid #607D8B;
+      border-radius: 25px;
+      i.fa {
+        border: none;
+        position: relative;
+        display: block;
+        width: auto;
+        height: auto;
+        &:before {
+          position: relative;
+          left: 0px;
+          top: 4px;
+        }
+      }
+      &:hover {
+        border: none;
+        background-color: #ffffff;
+        i.fa {
+          color: $headerBlue;
+        }
+      }
+    }
+  }
+}

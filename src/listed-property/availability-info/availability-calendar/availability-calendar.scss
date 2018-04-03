@@ -1,0 +1,441 @@
+[id="listing-booking"] {
+  font-family: Poppins;
+
+  @media only screen and (min-width: 1200px) and (max-width: 4880px) {
+    .listing-price {
+      white-space: nowrap;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .right-menu {
+      display: none !important;
+    }
+
+    .bottom-menu {
+      display: block !important;
+    }
+  }
+
+  .bottom-menu {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 102;
+    background-color: $white;
+    padding: 15px;
+    border-top: thin solid $border-color;
+  }
+}
+
+.modal-content {
+  .pglist-p-com {
+    margin-bottom: 0 !important;
+  }
+}
+
+.right-menu {
+  padding: 15px;
+
+  [id="calendar-info"] {
+    .container .row {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+
+    .row {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+
+  }
+
+  .list-enqu-btn ul li:last-child a {
+    background: $orange !important;
+    border: 1px solid $orange !important;
+  }
+
+  .calculation-spinner {
+    margin: 15% 0;
+    text-align: -webkit-center;
+    text-align: center;
+    font-size: small;
+    color: $mediumGrey;
+  }
+
+  .listing-head {
+    padding-bottom: 10px;
+    border-bottom: thin solid $border-color;
+
+    .listing-price {
+      font-size: 20px;
+      padding-right: 4px;
+      font-weight: 600;
+      color: #000;
+    }
+
+    .per-night {
+      font-size: small !important;
+    }
+  }
+
+  .booking-error {
+    margin-top: 15px;
+
+    a, span {
+      color: $white !important;
+    }
+  }
+
+  .alert-danger {
+    color: $white !important;
+    background-color: $error !important;
+    border-color: transparent !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  .listing-cal-detail {
+    padding-top: 10px;
+
+    .CalendarDay__blocked_out_of_range, .CalendarDay__blocked_out_of_range:active, .CalendarDay__blocked_out_of_range:hover {
+      background-color: #e8e8e8;
+    }
+
+    .list-enqu-btn ul li a {
+      margin: 4px 0 !important;
+    }
+
+    .alert {
+      margin-bottom: 0 !important;
+    }
+
+    .listing-item {
+      margin-bottom: 15px;
+
+      .list-pg-oth-info {
+        padding-top: 15px !important;
+      }
+
+      .list-enqu-btn ul li {
+        width: 100% !important;
+      }
+    }
+
+    .listing-guests-icon {
+      position: absolute;
+      top: 6px;
+      right: 10px;
+      -webkit-transition: opacity 2s linear;
+      -moz-transition: opacity 2s linear;
+      -ms-transition: opacity 2s linear;
+      -o-transition: opacity 2s linear;
+      transition: opacity 2s linear;
+      font-size: 24px !important;
+    }
+
+    .listing-guests-input {
+      height: 38px;
+      padding: 12px;
+      border: 1px solid $border-color;
+      line-height: 12px;
+      -webkit-transition: border-color .4s, color .4s;
+      transition: border-color .4s, color .4s;
+      background: #fff;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .overlay-shown {
+      border-bottom: 2px solid $blue;
+    }
+
+    .guest-overlay {
+      position: absolute;
+      z-index: 98;
+      background: $white;
+      padding: 15px;
+      border: thin solid #e1e1e1;
+      -webkit-box-shadow: 0 2px 6px $border-color;
+      -moz-box-shadow: 0 2px 6px $border-color;
+      box-shadow: 0 2px 6px $border-color;
+      border-radius: 3px !important;
+      margin-bottom: 16px !important;
+      width: 100%;
+
+      .guests-row {
+        padding: 10px 0 30px;
+
+        .counter-text {
+          width: 50px !important;
+        }
+
+        .counter .btn-counter i {
+          top: 0 !important;
+        }
+
+        .col-md-3, .col-md-2 {
+          padding: 0 !important;
+        }
+
+        .col-md-7 {
+          padding-left: 0 !important;
+        }
+      }
+
+      .guests-row-done {
+        padding-bottom: 5px !important;
+        text-align: right;
+        padding-right: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        color: $blue;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .guests-text-w-sub {
+        margin-top: -8px;
+      }
+
+      .guests-text {
+        padding: 4px 10px 0;
+        font-size: 16px;
+
+        .sub-text {
+          font-size: 12px;
+          color: $grey;
+        }
+      }
+    }
+
+    .listing-info-item {
+      color: $grey;
+    }
+
+    .listing-info-total {
+      color: $darkGrey !important;
+      font-weight: bold;
+    }
+  }
+
+  .list-pg-oth-info ul li {
+    line-height: 20px !important;
+    font-size: 14px !important;
+
+    span {
+      border: none !important;
+      background-color: transparent !important;
+    }
+  }
+
+  .date-exist {
+    padding: 15px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    color: $white;
+    border-top: thin solid $border-color;
+    font-size: 15px;
+    -webkit-transition: all 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+    -o-transition: all 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+    transition: all 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  }
+
+  .disabled {
+    pointer-events: none;
+    background-color: #DFDFDF !important;
+    border: none !important;
+    color: #9F9F9F !important;
+    cursor: default;
+  }
+
+  .availability-text {
+    float: right;
+    padding: 0 !important;
+
+    p {
+      font-size: 17px !important;
+      font-weight: bold !important;
+      margin: 0 !important;
+    }
+  }
+
+  .available {
+    color: $green;
+  }
+
+  .not-available {
+    color: $error;
+  }
+
+  .error {
+    background: $error;
+  }
+
+  .success {
+    background: $green;
+  }
+
+  .listing-stay {
+    //padding: 10px 25px;
+  }
+
+  .listing-stay-btn-row {
+    padding: 10px;
+    text-align: right;
+  }
+
+  .listing-stay-btn {
+    padding: 10px;
+    color: $blue;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .listing-day-price {
+    font-size: x-small;
+  }
+
+  .list-enqu-btn ul li {
+    width: 100% !important;
+  }
+
+  .custom-popover {
+    padding: 5px !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+  }
+
+  .full-blocked {
+    background: #e8e8e8;
+  }
+
+  .check-out-blocked {
+    background: $white !important;
+    position: relative;
+    border-bottom: solid 17px #e8e8e8;
+    border-right: solid 20px #e8e8e8;
+    border-left: solid 18px transparent;
+    border-top: solid 20px transparent;
+
+    .calendar-date {
+      position: absolute;
+      top: -12px;
+      left: -4px;
+    }
+  }
+
+  .check-in-blocked {
+    background: #e8e8e8 !important;
+    position: relative;
+    border-bottom: solid 18px $white;
+    border-right: solid 20px $white;
+    border-left: solid 18px transparent;
+    border-top: solid 19px transparent;
+
+    .calendar-date {
+      position: absolute;
+      top: -12px;
+      right: -7px;
+    }
+  }
+
+  .CalendarDay__selected, .CalendarDay__selected:active, .CalendarDay__selected:hover, .CalendarDay__selected_span, .CalendarDay__hovered_span, .CalendarDay__hovered_span:hover {
+    .check-in-blocked, .check-out-blocked {
+      background: none !important;
+      border-bottom: none !important;
+      border-right: none !important;
+      border-left: none !important;
+      border-top: none !important;
+
+      .calendar-date {
+        position: relative !important;
+        top: 0 !important;
+        right: 0 !important;
+        left: 0 !important;
+      }
+    }
+  }
+
+  .CalendarDay_container {
+    line-height: 0.76 !important;
+  }
+
+  // === calendar styling === //
+  .DateRangePickerInput {
+    width: 100% !important;
+    border: 1px solid $border-color !important;
+    -webkit-border-radius: 2px !important;
+    -moz-border-radius: 2px !important;
+    border-radius: 2px !important;
+  }
+
+  .DateInput_input__focused {
+    border-bottom: 2px solid $blue;
+  }
+
+  .DateInput_input {
+    padding: 8px !important;
+    font-size: 14px !important;
+  }
+
+  .DateInput__openDown {
+    &:after {
+      top: 44px !important;
+    }
+
+    &:before {
+      top: 43px !important;
+    }
+  }
+
+  .DateRangePicker_picker__openDown {
+    top: 54px;
+    z-index: 99;
+  }
+
+  .DateInput {
+    font-size: 14px !important;
+    line-height: 20px !important;
+    width: 49% !important;
+
+    &:nth-child(1) {
+      border-right: thin solid #e1e1e1;
+    }
+  }
+
+  .DateRangePicker {
+    width: 100% !important;
+  }
+  // === calendar styling === //
+}
+
+.book-now-button {
+  margin-top: 15px;
+  border-radius: 2px;
+  background-color: $orange;
+  border: solid 1px darken($orange, 5);
+  display: block;
+  padding: 8px;
+  text-align: center;
+  color: darken(#ffffff, 1);
+  &:hover, &:active, &:focus {
+    color: #ffffff;
+    background-color: darken($orange, 5);
+  }
+  &.disabled {
+    color: darken(#ffffff, 10);
+    background-color: darken(#ffffff, 20);
+  }
+}

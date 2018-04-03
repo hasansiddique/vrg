@@ -1,0 +1,46 @@
+[id="register"].signin-modal-body {
+  padding: 0 !important;
+
+  .log-in-pop {
+    width: 100% !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .log-in-pop-right {
+    width: 100% !important;
+  }
+
+  .input-field {
+    margin-top: 2rem !important;
+  }
+
+  .error {
+    color: #F44336;
+  }
+}
+
+.log-in-pop {
+  position: initial;
+}
+
+.modal-body {
+  .Select-placeholder, .Select--single > .Select-control .Select-value {
+    line-height: 32px;
+  }
+  .Select-input > input {
+    width: 100% !important;
+    background: none transparent !important;
+    border: 0 none !important;
+    box-shadow: none !important;
+    cursor: default !important;
+    display: inline-block !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    margin: 0 !important;
+    outline: none !important;
+    line-height: 25px !important;
+    padding: 0 !important;
+    -webkit-appearance: none !important;
+  }
+}

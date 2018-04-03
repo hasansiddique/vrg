@@ -1,0 +1,29 @@
+[id="step-one"] {
+  h3 {
+    font-size: 24px;
+    color: $blue;
+    text-align: center;
+
+    .sub-text {
+      margin: 10px auto;
+
+      span {
+        color: inherit;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .hom-cre-acc-right form select {
+    display: block;
+    height: 48px !important;
+    padding: 0 18px !important;
+    font-weight: bold;
+  }
+
+  .form-area {
+    padding: 25px 15px;
+    background-color: #f5f5f5;
+  }
+}

@@ -1,0 +1,15 @@
+[id="rates-availability"] {
+  .span-text {
+    line-height: 25px;
+    font-size: 15px;
+    color: $orange;
+    font-weight: 600;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+@import "unit-rates/unit-rates";

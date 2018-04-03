@@ -1,0 +1,39 @@
+[id="dashboard-bookings"] {
+  .error {
+    color: $error !important;
+  }
+
+  .db-list-rental {
+    background: $lightOrange;
+    padding: 2px 5px;
+    color: $white;
+    margin-right: 10px;
+    font-size: 12px;
+  }
+
+  .db-list-tenant {
+    background: $green;
+    padding: 2px 5px;
+    color: $white;
+    margin-right: 10px;
+    font-size: 12px;
+  }
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #rental-info * {
+    visibility: visible;
+  }
+  #rental-info {
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+  }
+}
+
+@import "rental-info/rental-info";
+@import "tenant-info/tenant-info";
