@@ -1,1 +1,2 @@
-# vrg
+# vrg-frontend
+Vacation Rental Guest
